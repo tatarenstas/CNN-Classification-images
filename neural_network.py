@@ -39,7 +39,7 @@ model = keras.Sequential([
 model.compile(optimizer='adam',loss='categorical_crossentropy',metrics=['accuracy'])
 model.fit(x_train, y_train_one_hot, batch_size=256, epochs=10, validation_split=0.2)
 
-image_path = "images/image1.jpg"
+image_path = "image1.jpg"
 image_read = plt.imread(image_path)
 resized_image = resize(image_read,(32,32,3))
 prediction = model.predict(np.array([resized_image]))
