@@ -56,4 +56,4 @@ for i in range (10):
 
 plt.grid(False)
 plt.imshow(resized_image)
-print (class_names[list_index[0]])
+print (class_names[list_index[0]]) #airplane
